@@ -1,0 +1,7 @@
+{
+  "sessions": [
+    {"id": 1, "duration": 25},
+    {"id": 2, "duration": 50},
+    {"id": 3, "duration": 25}
+  ]
+}

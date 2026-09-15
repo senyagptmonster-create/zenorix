@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:zenorix/product/product_app.dart';
+import 'package:zenorix/zenorix_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('ZenorixApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const ZenorixApp());
+    await tester.pump();
+    expect(find.text('Focus Sphere'), findsWidgets);
   });
 }
